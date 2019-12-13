@@ -1,0 +1,9 @@
+* Carga condensador
+v0 0 1 type=vdc vdc=10
+r1 0 2 3k
+c1 2 3 47u ic=0
+v1dummy 3 1 type=vdc vdc=0
+c2 2 4 22u ic=0
+v2dummy 4 1 type=vdc vdc=0
+.tran tstep=0.01 tstop=1 uic=0
+.end
